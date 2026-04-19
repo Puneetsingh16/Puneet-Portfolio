@@ -19,7 +19,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
       tech: ["React.js", "Material UI","API Integration","JavaScript"],
       github: "https://github.com/Puneetsingh16/",
-      live: "",
+      live: "https://weather-app-by-delta-1.onrender.com",
       featured: false
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1555421689-491a97ff2040",
       tech: ["React.js","Express.js","Tailwind CSS","MongoDB" ],
       github: "https://Puneetsingh16/",
-      live: "",
+      live: "https://bitlinks-dijk.onrender.com",
       featured: false
     }
   ];
