@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,18 +9,16 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -41,8 +39,8 @@ const Contact: React.FC = () => {
           
           <div className="text-center mb-16">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. 
-              Let's connect and create something amazing together!
+              I’m always open to opportunities, collaborations, and discussions around technology. 
+              Feel free to connect—I’d love to build something meaningful together.
             </p>
           </div>
 
@@ -60,7 +58,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-gray-300">halisalman04@gmail.com</p>
+                    <p className="text-gray-300">puneet7002singh@gmail.com</p>
                     <p className="text-gray-400 text-sm">Feel free to reach out anytime</p>
                   </div>
                 </div>
@@ -71,7 +69,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-300">+92 318 1469544</p>
+                    <p className="text-gray-300">+91 7905123882</p>
                     <p className="text-gray-400 text-sm">Available for calls Mon-Fri 9AM-6PM</p>
                   </div>
                 </div>
@@ -82,7 +80,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Location</h4>
-                    <p className="text-gray-300">Lahore, Pakistan</p>
+                    <p className="text-gray-300">Uttar-Pradesh,India</p>
                     <p className="text-gray-400 text-sm">Open to remote opportunities</p>
                   </div>
                 </div>
@@ -93,7 +91,7 @@ const Contact: React.FC = () => {
                 <h4 className="text-white font-semibold mb-4">Follow Me</h4>
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com/Ali-salman04" 
+                    href="https://github.com/Puneetsingh16" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-700 rounded-lg text-gray-300 hover:text-white hover:bg-gray-600 transition-all duration-300 hover:scale-110"
@@ -101,21 +99,13 @@ const Contact: React.FC = () => {
                     <Github size={24} />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/hafiz-ali-salman-40715a250/" 
+                    href="https://www.linkedin.com/in/puneetsingh5/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-700 rounded-lg text-gray-300 hover:text-white hover:bg-gray-600 transition-all duration-300 hover:scale-110"
                   >
                     <Linkedin size={24} />
                   </a>
-                  {/* <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-700 rounded-lg text-gray-300 hover:text-white hover:bg-gray-600 transition-all duration-300 hover:scale-110"
-                  >
-                    <Twitter size={24} />
-                  </a> */}
                 </div>
               </div>
             </div>
@@ -173,7 +163,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300"
-                    placeholder="What's this about?"
+                    placeholder="Subject of your message"
                   />
                 </div>
 
@@ -187,15 +177,15 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    rows={5}
+                    rows="5"
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 resize-none"
-                    placeholder="Tell me about your project or just say hello!"
+                    placeholder="Type your message here..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 flex items-center gap-2 justify-center"
                 >
                   <Send size={20} />
                   Send Message

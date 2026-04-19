@@ -1,65 +1,36 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
-const Projects: React.FC = () => {
+const Projects = () => {
   const projects = [
     {
-      title: "Derma AI",
+      title: "Airbnb",
       description:
-        "An AI-powered healthcare web application that analyzes skin images to detect potential dermatological conditions. Features include user authentication, AI-based image analysis, dermatologist consultation booking, and an admin dashboard for data management.",
-      image: "/derma-ai-preview.png",
-      tech: ["React", "Node.js", "MongoDB", "TensorFlow", "AWS"],
-      github: "https://github.com/yourusername/derma-ai",
-      live: "http://3.85.113.8",
+        "A full stack web application inspired by Airbnb that allows users to explore, create, and manage property listings with a responsive and user-friendly interface.",
+      image: "https://miro.medium.com/v2/resize:fit:1400/1*EeUSITAmhPij7jNFHaltJw.jpeg",
+      tech: ["React.js", "Node.js", "MongoDB","Express.js","Bootstrap Css","MVC"],
+      github: "https://github.com/Puneetsingh16/",
+      live: "https://wanderlust-0k1f.onrender.com/listings",
       featured: true
     },
- {
-  title: "Nova Flights",
-  description:
-    "A modern flight booking web application built with Next.js, offering real-time flight search, booking management, and secure user authentication. Features include responsive design, dynamic filtering, and smooth user experience optimized for all devices.",
-  image: "/starway-flights.jpg", // store image in your 'public' folder
-  tech: ["Next.js", "MongoDB", "Tailwind CSS", "Node.js"],
-  github: "https://github.com/Ali-salman04/Flight-Website", // replace with actual GitHub repo
-  live: "https://flight-website-eight.vercel.app/", // replace with actual deployed link
-  featured: true
-}
-,
     {
-      title: "School Record Inventory",
-      description: "Designed and developed a complete admin-user dashboard solution for a client, focusing on real-time data handling, secure role-based access, and seamless UI/UX across user types.",
-      image: "/school-r.png",
-      tech: ["React", "Chart.js", "Firebase", "Tailwind Css"],
-      github: "https://github.com/Ali-salman04/School-Record-Inventory",
-      live: "https://school-record-inventory-btgy.vercel.app/login",
+      title: "Mini Weather App",
+      description: "A web application that provides real-time weather updates for any city using API integration.",
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
+      tech: ["React.js", "Material UI","API Integration","JavaScript"],
+      github: "https://github.com/Puneetsingh16/",
+      live: "",
       featured: false
     },
     {
-      title: "Active Technology",
-      description: "Proud to partner with Active Technology to build a clean, responsive Next.js website with Tailwind, dark mode, Lucide icons, and WhatsApp support  a fast and user-focused digital solution.",
-      image: "/public/Untitled design.png",
-      tech: ["Next.js", "Tailwind CSS", "Lucide", "WhatsApp chat integration"],
-      github: "https://github.com/Ali-salman04/Active-Technology",
-      live: "https://active-technology.vercel.app/",
+      title: "Bitlinks",
+      description: "A web app that converts long URLs into short, easy-to-share links.",
+      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040",
+      tech: ["React.js","Express.js","Tailwind CSS","MongoDB" ],
+      github: "https://Puneetsingh16/",
+      live: "",
       featured: false
-    },
-    {
-      title: "Ru-Novel",
-      description: "Ru-Novel is an online platform where users can read, write, and share novels, join forums, and access premium content through membership.",
-      image: "/public/ru-nuvel.png",
-      tech: ["React.js", "Cloudflare", "Stripe", ],
-      github: "https://github.com",
-      live: "https://ru-novel-i9jv.vercel.app/login", 
-      featured: false
-    },
-    // {
-    //   title: "Learning Management System",
-    //   description: "A comprehensive LMS with course creation, progress tracking, video streaming, and interactive quizzes. Supports multiple user roles and permissions.",
-    //   image: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600",
-    //   tech: ["Angular", "Spring Boot", "MySQL", "AWS S3"],
-    //   github: "https://github.com/Ali-salman04/Final-Year-Project-2024-2025-",
-    //   live: "https://example.com",
-    //   featured: false
-    // }
+    }
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -77,17 +48,17 @@ const Projects: React.FC = () => {
           
           <div className="text-center mb-16">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills in full-stack development. 
-              Each project demonstrates different aspects of modern web development.
+              Here are some of my projects that highlight
+              my full stack development skills and problem-solving abilities.
             </p>
           </div>
 
           {/* Featured Projects */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-20">
+          <div className="grid md:grid-cols-1 xl:grid-cols-1 ">
             {featuredProjects.map((project, index) => (
               <div 
                 key={index}
-                className="bg-gray-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className=" bg-gray-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="relative overflow-hidden">
                   <img 
@@ -149,7 +120,7 @@ const Projects: React.FC = () => {
               Other Projects
             </h3>
             
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 xl:grid-cols-2 gap-8">
               {otherProjects.map((project, index) => (
                 <div 
                   key={index}
@@ -201,7 +172,7 @@ const Projects: React.FC = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-blue-400 transition-colors"
+                        className="text-gray-400 hover:text-white transition-colors"
                       >
                         <ExternalLink size={20} />
                       </a>

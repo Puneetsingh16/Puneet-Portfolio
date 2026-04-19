@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heart, ArrowUp } from 'lucide-react';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center">
           {/* Logo/Name */}
           <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
-            Hafiz Ali Salman
+          Puneet Singh
           </div>
           
           {/* Tagline */}
           <p className="text-gray-400 text-center mb-8 max-w-md">
-            Full Stack Developer passionate about creating innovative web solutions and exceptional user experiences.
+            Building scalable web applications and solving real-world problems with modern technologies.
           </p>
 
           {/* Quick Links */}
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-1 text-gray-400 mb-4 md:mb-0">
               <span>Made with</span>
               <Heart size={16} className="text-red-500 fill-current" />
-              <span>by Hafiz Ali Salman</span>
+              <span>by Puneet singh</span>
             </div>
             
             <div className="text-gray-400 text-sm">

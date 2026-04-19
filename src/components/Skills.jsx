@@ -1,38 +1,39 @@
 import React from 'react';
 
-const Skills: React.FC = () => {
+const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
       skills: [
-        { name: "React", level: 90, color: "bg-blue-500" },
-        { name: "TypeScript", level: 85, color: "bg-blue-600" },
-        { name: "JavaScript", level: 95, color: "bg-yellow-500" },
+        { name: "React.js", level: 75, color: "bg-blue-500" },
+        { name: "JavaScript", level: 85, color: "bg-yellow-500" },
         { name: "HTML/CSS", level: 90, color: "bg-orange-500" },
-        { name: "Tailwind CSS", level: 88, color: "bg-cyan-500" },
-        { name: "Next.js", level: 80, color: "bg-gray-800" }
+        { name: "Tailwind CSS", level: 90, color: "bg-cyan-500" },
+        { name: "Next.js", level: 60, color: "bg-purple-800" }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 85, color: "bg-green-600" },
-        { name: "Express.js", level: 88, color: "bg-gray-700" },
-        // { name: "Python", level: 75, color: "bg-yellow-600" },
-        { name: "RESTful APIs", level: 90, color: "bg-purple-500" },
-        { name: "GraphQL", level: 70, color: "bg-pink-500" },
-        // { name: "Microservices", level: 75, color: "bg-indigo-500" }
+        { name: "Node.js", level: 75, color: "bg-green-600" },
+        { name: "Express.js", level: 80, color: "bg-red-700" },
+        { name: "RESTful APIs", level: 75, color: "bg-purple-500" }
+      ]
+    },
+     {
+      title: "Programming & CS Fundamentals",
+      skills: [
+        { name: "Java", level: 85, color: "bg-blue-700" },
+        { name: "Python", level: 80, color: "bg-green-500" },
+        { name: "DSA", level: 75, color: "bg-yellow-500" },
+        { name: "C/C++", level: 80, color: "bg-pink-500" }
       ]
     },
     {
       title: "Database & Cloud",
       skills: [
-        { name: "PostgreSQL", level: 85, color: "bg-blue-700" },
-        { name: "MongoDB", level: 80, color: "bg-green-500" },
-        // { name: "Redis", level: 75, color: "bg-red-500" },
-        { name: "AWS", level: 70, color: "bg-orange-600" },
-        { name: "Docker", level: 78, color: "bg-blue-400" },
-        { name: "Firebase", level: 82, color: "bg-yellow-600" }
+        { name: "MySQL", level: 85, color: "bg-blue-700" },
+        { name: "MongoDB", level: 80, color: "bg-green-500" }
       ]
     }
   ];
@@ -49,8 +50,8 @@ const Skills: React.FC = () => {
           
           <div className="text-center mb-16">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Here are the technologies and tools I work with to bring ideas to life. 
-              I'm always learning and exploring new technologies to stay current with industry trends.
+              Technologies and tools I use to build efficient and scalable applications, 
+              with a focus on continuous learning and improvement.
             </p>
           </div>
 
@@ -97,8 +98,7 @@ const Skills: React.FC = () => {
             
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                'Git', 'GitHub', 'VS Code', 'Figma', 'Postman', 'Jest', 
-                'Vite', 'CI/CD', 'Agile'
+                'Git', 'GitHub', 'VS Code', 'Render','Chat-GPT'
               ].map((tech, index) => (
                 <span 
                   key={index}

@@ -1,27 +1,27 @@
 import React from 'react';
 import { Code, Database, Globe, Server } from 'lucide-react';
 
-const About: React.FC = () => {
+const About = () => {
   const features = [
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Frontend Development",
-      description: "Modern React applications with responsive design and optimal performance"
+      description: "Building responsive and high-performance UIs using React."
     },
     {
       icon: <Server className="w-8 h-8" />,
       title: "Backend Development", 
-      description: "Robust server-side solutions with Node.js, Express, and RESTful APIs"
+      description: "Developing scalable APIs with Node.js and Express."
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Database Design",
-      description: "Efficient database architecture with SQL and NoSQL solutions"
+      title: "Java & Problem Solving",
+      description: "Strong in Java, OOPs, and Data Structures & Algorithms"
     },
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Full Stack Integration",
-      description: "Seamless integration of frontend and backend systems"
+      title: "Database & Integration",
+      description: "Managing MongoDB databases and integrating full stack applications."
     }
   ];
 
@@ -37,14 +37,12 @@ const About: React.FC = () => {
           
           <div className="text-center mb-16">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-              I'm a passionate Full Stack Developer with expertise in modern web technologies. 
-              I love creating efficient, scalable solutions that solve real-world problems and 
-              deliver exceptional user experiences.
+             I'm a passionate Full Stack Developer and aspiring Software Engineer with a strong foundation in Java, Data Structures & Algorithms, and modern web technologies.
+             I enjoy building scalable applications that solve real-world problems and deliver seamless user experiences.
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              With a strong foundation in both frontend and backend technologies, I bring ideas to life 
-              through clean code, thoughtful design, and robust architecture. I'm always eager to learn 
-              new technologies and take on challenging projects.
+             I have hands-on experience building full stack projects like an Airbnb Clone and a URL shortener using React, Node.js, Express, and MongoDB, strengthening my frontend and backend skills.
+              With a strong foundation in Java, OOP, and problem-solving, I continuously work on improving my coding abilities and growing as a software engineer.
             </p>
           </div>
 
@@ -69,12 +67,10 @@ const About: React.FC = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-700">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-gray-700">
             {[
-              { label: 'Years Experience', value: '2+' },
-              { label: 'Projects Completed', value: '20+' },
-              { label: 'Technologies', value: '20+' },
-              { label: 'Happy Clients', value: '15+' }
+              { label: 'Projects Completed', value: '5+' },
+              { label: 'Technologies', value: '10+' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">

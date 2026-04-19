@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   const scrollToAbout = () => {
     const element = document.querySelector('#about');
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -20,31 +20,31 @@ const Hero: React.FC = () => {
           {/* Profile Image */}
           <div className="w-48 h-48 mx-auto mb-8 relative">
             <img 
-              src="/prof.jpg.png"
-              alt="Hafiz Ali Salman"
+              src="/photo.jpg"
+              alt="Puneet Singh"
               className="w-full h-full rounded-full object-cover shadow-2xl ring-4 ring-blue-500/50"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-ping opacity-20"></div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Hafiz Ali <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Salman</span>
+            Puneet <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Singh</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
-            Full Stack Developer
+            Full Stack Developer | DSA Enthusiast
           </h2>
           
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating innovative web solutions with modern technologies. 
-            I build scalable applications that deliver exceptional user experiences and robust backend systems.
+           Passionate about problem-solving and web development, with a strong foundation in Data Structures & Algorithms and modern technologies.
+           Focused on building efficient, scalable, and user-friendly applications.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a 
-              href="/Full-stack-Dev.pdf" 
-              download="Hafiz_Ali_Salman_CV.pdf"
+              href="Puneetsingh Resume.pdf" 
+              download="Puneetsingh Resume.pdf"
               className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105 flex items-center gap-2 justify-center"
             >
               <Download size={20} />
@@ -60,16 +60,15 @@ const Hero: React.FC = () => {
 
           {/* Social Links */}
           <div className="flex gap-6 justify-center mb-12">
-            <a href="https://github.com/Ali-salman04" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/Puneetsingh16" target="_blank" rel="noopener noreferrer" 
                className="p-3 bg-gray-800 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 transition-all duration-300 hover:scale-110">
               <Github size={24} />
             </a>
-            <a href="https://www.linkedin.com/in/hafiz-ali-salman-40715a250/
-" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/puneetsingh5/" target="_blank" rel="noopener noreferrer"
                className="p-3 bg-gray-800 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 transition-all duration-300 hover:scale-110">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:halisalman04@gmail.com"
+            <a href="mailto:puneet7002singh@gmail.com"
                className="p-3 bg-gray-800 rounded-full text-gray-300 hover:text-white hover:bg-gray-700 transition-all duration-300 hover:scale-110">
               <Mail size={24} />
             </a>

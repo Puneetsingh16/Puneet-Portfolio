@@ -1,35 +1,8 @@
 import React from 'react';
 import { Calendar, MapPin, Building } from 'lucide-react';
 
-const Experience: React.FC = () => {
-  const experiences = [
-    {
-      title: "Full Stack Developer (MERN)",
-      company: "Upwork",
-      location: "Remote",
-      period: "2024 - Present",
-      description: [
-        "Developed and maintained scalable full-stack web applications using MERN stack",
-        "Integrated RESTful APIs and optimized backend performance for faster data handling",
-        "Built responsive, user-friendly UIs ensuring seamless user experience across devices",
-        "Collaborated with clients globally to deliver tailored solutions meeting business goals"
-      ],
-      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS"]
-    },
-    {
-      title: "React.js Developer",
-      company: "DMZ Dev Hub",
-      location: "Lahore, Pakistan", 
-      period: "2024 - 2025",
-      description: [
-        "Built responsive web applications using React and modern CSS frameworks",
-        "Collaborated with UI/UX designers to implement pixel-perfect designs",
-        "Improved code quality by implementing testing frameworks",
-        "Contributed to open-source projects and technical documentation"
-      ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Jest", "Git"]
-    }
-  ];
+const Experience = () => {
+  const experiences = [];
 
   return (
     <section id="experience" className="py-20 bg-gray-900">
@@ -43,8 +16,8 @@ const Experience: React.FC = () => {
           
           <div className="text-center mb-16">
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              My professional journey in software development, where I've had the opportunity 
-              to work on diverse projects and continuously expand my technical expertise.
+              Currently a Computer Science student, actively building projects and strengthening
+               my skills in full stack development and problem solving.
             </p>
           </div>
 
@@ -109,23 +82,53 @@ const Experience: React.FC = () => {
           </div>
 
           {/* Education Section */}
-          <div className="mt-20 pt-16 border-t border-gray-700">
-            <h3 className="text-3xl font-bold text-white text-center mb-12">
-              Education 
-            </h3>
-            
-            <div className="flex justify-center">
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 max-w-md text-center">
-                <h4 className="text-xl font-bold text-white mb-2">
-                  Bachelor of Software Engineering
-                </h4>
-                <p className="text-blue-400 mb-4">University of Management and Technology (UMT), Lahore • 2021 - 2025</p>
-                {/* <p className="text-gray-300">
-                  Specialized in Full Stack Web Development and Modern Web Technologies.
-                  Graduated with distinction and completed final year project on web application security.
-                </p> */}
-              </div>
-            </div>
+        <div className="mt-20 pt-16 border-t border-gray-700">
+          <h3 className="text-3xl font-bold text-white text-center mb-12">
+                Education
+          </h3>
+
+        <div className="flex flex-col items-center gap-10">
+
+        {/* B.Tech (Top - Highlighted) */}
+
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 max-w-md text-center w-full">
+        <h4 className="text-xl font-bold text-white mb-2">
+            Bachelor of Technology (CSE - AI)
+        </h4>
+        <p className="text-blue-400 mb-2">
+           G L Bajaj Group of Institutions
+        </p>
+        <p className="text-gray-400">India • 2023 - 2027</p>
+        <p className="text-gray-400">CGPA: 7.2</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl">
+
+          {/* Intermediate */}
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 text-center">
+        <h4 className="text-lg font-semibold text-white mb-2">
+            Intermediate
+        </h4>
+        <p className="text-blue-400 mb-2">
+           Rani Revati Devi SVNIC
+        </p>
+        <p className="text-gray-400">2022 - 2023</p>
+        <p className="text-gray-400">69%</p>
+        </div>
+
+        {/* High School */}
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 text-center">
+        <h4 className="text-lg font-semibold text-white mb-2">
+           High School
+        </h4>
+        <p className="text-blue-400 mb-2">
+           Rani Revati Devi SVNIC
+        </p>
+        <p className="text-gray-400">2020 - 2021</p>
+        <p className="text-gray-400">91.5%</p>
+        </div>
+           </div>
+           </div>
           </div>
         </div>
       </div>
