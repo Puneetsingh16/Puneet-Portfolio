@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from "emailjs-com";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
@@ -16,16 +17,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.send(
+     import.meta.env.VITE_SERVICE_ID,
+     import.meta.env.VITE_TEMPLATE_ID,
+    {
+      name: formData.name,
+      email: formData.email,
+      title: formData.subject,
+      message: formData.message,
+    },
+    import.meta.env.VITE_PUBLIC_KEY
+  )
+  .then(() => {
+    alert("Message Sent ✅");
+  })
+  .catch((error) => {
+    console.log(error);
+    alert("Error ❌");
+  });
+
+  setFormData({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+};
 
   return (
     <section id="contact" className="py-20 bg-gray-800">
