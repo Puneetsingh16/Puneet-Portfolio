@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="w-48 h-48 mx-auto mb-8 relative">
+          <div className="w-48 h-48 mx-auto mb-8 mt-10 relative">
             <img 
               src="/photo.jpg"
               alt="Puneet Singh"
